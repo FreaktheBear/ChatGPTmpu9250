@@ -2,7 +2,7 @@ from machine import Pin, I2C
 import time
 from mpu9250 import MPU9250
 
-# Initialize I2C on Raspberry Pi Pico (SCL on GP5, SDA on GP4)
+# Initialize I2C on Raspberry Pi Pico (SCL on GP21, SDA on GP20)
 i2c = I2C(0, scl=Pin(21), sda=Pin(20))
 
 # Create MPU9250 object
